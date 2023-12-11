@@ -1,5 +1,7 @@
 # Assist Mon
 
+![Screenshot](screenshot.jpg)
+
 *A small web-application designed to give real-time to users about the status of HP ZCentral on host machines.*
 
 ## Description
