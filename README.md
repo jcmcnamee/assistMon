@@ -14,12 +14,13 @@ Client machines send status updates to the server using Powershells Invoke-RestM
 
 1. Download and install Node.js from https://nodejs.org/en/download/current
 2. Download and extract files to where you want to run the app from.
-3. Adjust port number in ``.env`` if necessary. (Default PORT: 443)
-4. Download all dependancies:
+3. Import your environmental variables at ``config/.env`` to set port number
+4. Import self-signed certificates ``server.cert`` and ``server.key`` at ``/config``
+5. Download all dependancies:
    1. In the console, navigate to the root folder
    2. Type ``npm i`` to download all dependancies
    3. Type ``npm i pm2 -g`` to install PM2 to manage to server process
-5. Run the app by typing ``pm2 start app.js``
+6. Run the app by typing ``pm2 start app.js``
 
 The app does not query the client machines, so an initial update need to be received from the clients. This can be done by triggering the scheduled task using PDQ/Powershell remoting.
 
